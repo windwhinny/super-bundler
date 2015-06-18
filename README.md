@@ -3,7 +3,7 @@
 super-bundler 可以将多个文件，如  css, js, template 打包入 HTML 中。
 相比其它前端模块化工具，它配置更加简单，且有很强的扩展性，尤其适合 SPA 这类不需要动态渲染 HTML 的 web 应用。
 
-Example:
+##Example
 
 index.js
 ```javascript
@@ -104,7 +104,7 @@ logger.log();
 
 ```
 
-if you set `options.uglify = true`, the output should like this:
+如果你设置了`options.uglify = true`，那么输出的结果将会全部被 uglify
 
 ```html
 <!doctype html><html><head><style type="text/css">h1 {color: #246AFF;}</style>style><script type="text/javascript" id="$$$require">
@@ -115,3 +115,9 @@ if you set `options.uglify = true`, the output should like this:
 !function(){var r={exports:{}};!function(r,e,o){var $=r(0);$.log()}($$$require,r,r.exports),$$$require.ms.push(r.exports||{})}();
 </script>script></head>head><body><h1>Super Pack</h1>h1> </body>body></html>html>
 ```
+
+##options
+
+- uglify 是否 uglify
+- expandAll 展开所有的 bundle, (`link="true"` 的标签默认不会被展开)
+- paths 寻找文件的路径
