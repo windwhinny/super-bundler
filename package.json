@@ -1,0 +1,19 @@
+{
+  "name": "super-bundle",
+  "version": "1.0.0",
+  "description": "bundle everything into HTML",
+  "main": "index.js",
+  "keywords": [
+    "require",
+    "bundle"
+  ],
+  "author": "Eric Time <windwhinny@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.2.1",
+    "gulp-util": "^3.0.5",
+    "less": "^2.5.1",
+    "through2": "^2.0.0",
+    "uglify-js": "^2.4.23"
+  }
+}
