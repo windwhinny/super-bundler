@@ -6,13 +6,13 @@ super-bundler 可以将多个文件，如  css, js, template 打包入 HTML 中�
 ##Example
 
 index.js
-```javascript
+```
 var logger = require('./logger');
 logger.log();
 ```
 
 logger.js
-```javascipt
+```
 module.exports = {
     log: function(){
         console.log('hello world');
@@ -21,7 +21,7 @@ module.exports = {
 ```
 
 index.less
-```less
+```
 @blue: #246AFF;
 h1{
     color: @blue;
@@ -29,7 +29,7 @@ h1{
 ```
 
 index.html
-```html
+```
 <!doctype html>
 <html>
     <head>
@@ -63,12 +63,12 @@ fs.readFile('./index.html', function(err,content){
 })
 ```
 
-```shell
+```
 $ node example.js
 ```
 
 output
-```html
+```
 <!doctype html>
 <html>
     <head>
@@ -106,7 +106,7 @@ logger.log();
 
 如果你设置了`options.uglify = true`，那么输出的结果将会全部被 uglify
 
-```html
+```
 <!doctype html><html><head><style type="text/css">h1 {color: #246AFF;}</style>style><script type="text/javascript" id="$$$require">
 !function(n){function e(n){return o[n]}var o=[];e.ms=o,n.$$$require=e}("undefined"==typeof module?window:global);
 </script>script><script type="text/javascript" id="./logger">
