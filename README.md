@@ -6,12 +6,14 @@ super-bundler 可以将多个文件，如  css, js, template 打包入 HTML 中�
 ##Example
 
 index.js
+
 ```
 var logger = require('./logger');
 logger.log();
 ```
 
 logger.js
+
 ```
 module.exports = {
     log: function(){
@@ -21,6 +23,7 @@ module.exports = {
 ```
 
 index.less
+
 ```
 @blue: #246AFF;
 h1{
@@ -29,6 +32,7 @@ h1{
 ```
 
 index.html
+
 ```
 <!doctype html>
 <html>
@@ -43,6 +47,7 @@ index.html
 ```
 
 example.js
+
 ```
 var Bundle = require('super-bundle'),
     fs = require('fs');
@@ -68,6 +73,7 @@ $ node example.js
 ```
 
 output
+
 ```
 <!doctype html>
 <html>
