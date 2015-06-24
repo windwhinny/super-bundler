@@ -1,6 +1,6 @@
 {
   "name": "super-bundle",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "bundle everything into HTML",
   "main": "index.js",
   "repository": {
