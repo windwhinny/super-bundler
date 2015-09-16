@@ -1,6 +1,6 @@
 {
   "name": "super-bundle",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "bundle everything into HTML",
   "main": "index.js",
   "repository": {
@@ -15,8 +15,10 @@
   "license": "ISC",
   "dependencies": {
     "async": "^1.2.1",
+    "autoprefixer": "^6.0.2",
     "gulp-util": "^3.0.5",
     "less": "^2.5.1",
+    "postcss": "^5.0.5",
     "through2": "^2.0.0",
     "uglify-js": "^2.4.23"
   }
